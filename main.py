@@ -18,6 +18,7 @@ new_split = int(split)
 
 payment_split = (new_total_bill / new_split) * ((100 + new_tip) * .01)
 new_payment_split = round(payment_split, 2)
+new_payment_split = "{:.2f}".format(new_payment_split)
 
 print(f"Each person should pay: ${new_payment_split}")
 
